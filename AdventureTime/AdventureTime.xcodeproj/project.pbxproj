@@ -12,7 +12,7 @@
 		0F216F0D2AC5CDEC00E06815 /* ReignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F216F0C2AC5CDEC00E06815 /* ReignViewModel.swift */; };
 		0F216F0F2AC5CFAE00E06815 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F216F0E2AC5CFAE00E06815 /* Star.swift */; };
 		0F216F112AC5CFBB00E06815 /* ReignCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F216F102AC5CFBB00E06815 /* ReignCard.swift */; };
-		0F216F132AC5D62D00E06815 /* ATButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F216F122AC5D62D00E06815 /* ATButtonStyle.swift */; };
+		0F216F132AC5D62D00E06815 /* ArrowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F216F122AC5D62D00E06815 /* ArrowStyle.swift */; };
 		0F216F152AC5D65700E06815 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F216F142AC5D65700E06815 /* Segment.swift */; };
 		0FD874AD2AC4ABF200B3B0DD /* AdventureTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD874AC2AC4ABF200B3B0DD /* AdventureTimeApp.swift */; };
 		0FD874B12AC4ABF400B3B0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD874B02AC4ABF400B3B0DD /* Assets.xcassets */; };
@@ -27,7 +27,7 @@
 		0F216F0C2AC5CDEC00E06815 /* ReignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReignViewModel.swift; sourceTree = "<group>"; };
 		0F216F0E2AC5CFAE00E06815 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		0F216F102AC5CFBB00E06815 /* ReignCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReignCard.swift; sourceTree = "<group>"; };
-		0F216F122AC5D62D00E06815 /* ATButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATButtonStyle.swift; sourceTree = "<group>"; };
+		0F216F122AC5D62D00E06815 /* ArrowStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowStyle.swift; sourceTree = "<group>"; };
 		0F216F142AC5D65700E06815 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
 		0FD874A92AC4ABF200B3B0DD /* AdventureTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventureTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD874AC2AC4ABF200B3B0DD /* AdventureTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureTimeApp.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				0FD874D72AC4C59500B3B0DD /* StarStyle.swift */,
-				0F216F122AC5D62D00E06815 /* ATButtonStyle.swift */,
+				0F216F122AC5D62D00E06815 /* ArrowStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -243,7 +243,7 @@
 				0F216F0F2AC5CFAE00E06815 /* Star.swift in Sources */,
 				0FD874AD2AC4ABF200B3B0DD /* AdventureTimeApp.swift in Sources */,
 				0FD874D82AC4C59500B3B0DD /* StarStyle.swift in Sources */,
-				0F216F132AC5D62D00E06815 /* ATButtonStyle.swift in Sources */,
+				0F216F132AC5D62D00E06815 /* ArrowStyle.swift in Sources */,
 				0F216F092AC5CDB400E06815 /* ReignView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
