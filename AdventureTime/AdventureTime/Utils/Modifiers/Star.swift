@@ -20,7 +20,7 @@ struct Star: ViewModifier {
                     Spacer()
                     Button("") {}.buttonStyle(StarStyle(isFilled: $isFilled, color: color, size: size))
                 }
-                .padding(8)
+                .padding(12)
             }
     }
 }

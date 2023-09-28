@@ -22,7 +22,7 @@ struct Segment: View {
 //            .buttonStyle(ArrowStyle(direction: .left))
             ForEach(0..<4) { point in
                 Circle()
-                    .frame(width: 30)
+                    .frame(width: 10,height: 10)
                     .foregroundStyle(point == selectedPoint ? color : .gray)
             }
 //            Button(""){ actionRight() }

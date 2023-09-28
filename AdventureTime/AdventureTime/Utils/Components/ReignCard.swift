@@ -20,7 +20,7 @@ struct ReignCard: View {
                 .foregroundStyle(.white)
                 .overlay {
                     VStack(alignment: .leading, spacing: 16) {
-                        VStack(spacing: 24) {
+                        VStack(spacing: 16) {
                             Image(reign.name)
                                 .resizable()
                                 .frame(height: 181)
