@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F216F092AC5CDB400E06815 /* ReignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F216F082AC5CDB400E06815 /* ReignView.swift */; };
+		0F216F0B2AC5CDC200E06815 /* Reign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F216F0A2AC5CDC200E06815 /* Reign.swift */; };
+		0F216F0D2AC5CDEC00E06815 /* ReignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F216F0C2AC5CDEC00E06815 /* ReignViewModel.swift */; };
+		0F216F0F2AC5CFAE00E06815 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F216F0E2AC5CFAE00E06815 /* Star.swift */; };
+		0F216F112AC5CFBB00E06815 /* ReignCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F216F102AC5CFBB00E06815 /* ReignCard.swift */; };
+		0F216F132AC5D62D00E06815 /* ATButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F216F122AC5D62D00E06815 /* ATButtonStyle.swift */; };
+		0F216F152AC5D65700E06815 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F216F142AC5D65700E06815 /* Segment.swift */; };
+		0FD874AD2AC4ABF200B3B0DD /* AdventureTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD874AC2AC4ABF200B3B0DD /* AdventureTimeApp.swift */; };
+		0FD874B12AC4ABF400B3B0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD874B02AC4ABF400B3B0DD /* Assets.xcassets */; };
+		0FD874B52AC4ABF400B3B0DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD874B42AC4ABF400B3B0DD /* Preview Assets.xcassets */; };
+		0FD874C92AC4B51A00B3B0DD /* ReignLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD874C82AC4B51A00B3B0DD /* ReignLayout.swift */; };
+		0FD874D82AC4C59500B3B0DD /* StarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD874D72AC4C59500B3B0DD /* StarStyle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F216F082AC5CDB400E06815 /* ReignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReignView.swift; sourceTree = "<group>"; };
+		0F216F0A2AC5CDC200E06815 /* Reign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reign.swift; sourceTree = "<group>"; };
+		0F216F0C2AC5CDEC00E06815 /* ReignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReignViewModel.swift; sourceTree = "<group>"; };
+		0F216F0E2AC5CFAE00E06815 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		0F216F102AC5CFBB00E06815 /* ReignCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReignCard.swift; sourceTree = "<group>"; };
+		0F216F122AC5D62D00E06815 /* ATButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATButtonStyle.swift; sourceTree = "<group>"; };
+		0F216F142AC5D65700E06815 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		0FD874A92AC4ABF200B3B0DD /* AdventureTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventureTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD874AC2AC4ABF200B3B0DD /* AdventureTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureTimeApp.swift; sourceTree = "<group>"; };
+		0FD874B02AC4ABF400B3B0DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FD874B22AC4ABF400B3B0DD /* AdventureTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AdventureTime.entitlements; sourceTree = "<group>"; };
+		0FD874B42AC4ABF400B3B0DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0FD874C82AC4B51A00B3B0DD /* ReignLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReignLayout.swift; sourceTree = "<group>"; };
+		0FD874D72AC4C59500B3B0DD /* StarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarStyle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FD874A62AC4ABF200B3B0DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F216F042AC5CC9500E06815 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0F216F102AC5CFBB00E06815 /* ReignCard.swift */,
+				0F216F142AC5D65700E06815 /* Segment.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0F216F052AC5CCC000E06815 /* Reign */ = {
+			isa = PBXGroup;
+			children = (
+				0F216F082AC5CDB400E06815 /* ReignView.swift */,
+				0F216F0A2AC5CDC200E06815 /* Reign.swift */,
+				0F216F0C2AC5CDEC00E06815 /* ReignViewModel.swift */,
+			);
+			path = Reign;
+			sourceTree = "<group>";
+		};
+		0FD874A02AC4ABF200B3B0DD = {
+			isa = PBXGroup;
+			children = (
+				0FD874AB2AC4ABF200B3B0DD /* AdventureTime */,
+				0FD874AA2AC4ABF200B3B0DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FD874AA2AC4ABF200B3B0DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FD874A92AC4ABF200B3B0DD /* AdventureTime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FD874AB2AC4ABF200B3B0DD /* AdventureTime */ = {
+			isa = PBXGroup;
+			children = (
+				0FD874CF2AC4B56700B3B0DD /* Utils */,
+				0FD874BF2AC4B47900B3B0DD /* Resources */,
+				0FD874BE2AC4B47100B3B0DD /* App */,
+				0FD874BB2AC4B42600B3B0DD /* Features */,
+				0FD874B22AC4ABF400B3B0DD /* AdventureTime.entitlements */,
+				0FD874B32AC4ABF400B3B0DD /* Preview Content */,
+			);
+			path = AdventureTime;
+			sourceTree = "<group>";
+		};
+		0FD874B32AC4ABF400B3B0DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0FD874B42AC4ABF400B3B0DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0FD874BB2AC4B42600B3B0DD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0F216F052AC5CCC000E06815 /* Reign */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		0FD874BE2AC4B47100B3B0DD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0FD874AC2AC4ABF200B3B0DD /* AdventureTimeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0FD874BF2AC4B47900B3B0DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FD874B02AC4ABF400B3B0DD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0FD874CF2AC4B56700B3B0DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0F216F042AC5CC9500E06815 /* Components */,
+				0FD874D42AC4BACF00B3B0DD /* Layouts */,
+				0FD874D32AC4BAB400B3B0DD /* Modifiers */,
+				0FD874D02AC4B57200B3B0DD /* Styles */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0FD874D02AC4B57200B3B0DD /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				0FD874D72AC4C59500B3B0DD /* StarStyle.swift */,
+				0F216F122AC5D62D00E06815 /* ATButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		0FD874D32AC4BAB400B3B0DD /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				0F216F0E2AC5CFAE00E06815 /* Star.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		0FD874D42AC4BACF00B3B0DD /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				0FD874C82AC4B51A00B3B0DD /* ReignLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FD874A82AC4ABF200B3B0DD /* AdventureTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FD874B82AC4ABF400B3B0DD /* Build configuration list for PBXNativeTarget "AdventureTime" */;
+			buildPhases = (
+				0FD874A52AC4ABF200B3B0DD /* Sources */,
+				0FD874A62AC4ABF200B3B0DD /* Frameworks */,
+				0FD874A72AC4ABF200B3B0DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdventureTime;
+			productName = AdventureTime;
+			productReference = 0FD874A92AC4ABF200B3B0DD /* AdventureTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FD874A12AC4ABF200B3B0DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0FD874A82AC4ABF200B3B0DD = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 0FD874A42AC4ABF200B3B0DD /* Build configuration list for PBXProject "AdventureTime" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FD874A02AC4ABF200B3B0DD;
+			productRefGroup = 0FD874AA2AC4ABF200B3B0DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FD874A82AC4ABF200B3B0DD /* AdventureTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FD874A72AC4ABF200B3B0DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD874B52AC4ABF400B3B0DD /* Preview Assets.xcassets in Resources */,
+				0FD874B12AC4ABF400B3B0DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FD874A52AC4ABF200B3B0DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F216F0D2AC5CDEC00E06815 /* ReignViewModel.swift in Sources */,
+				0F216F152AC5D65700E06815 /* Segment.swift in Sources */,
+				0F216F112AC5CFBB00E06815 /* ReignCard.swift in Sources */,
+				0F216F0B2AC5CDC200E06815 /* Reign.swift in Sources */,
+				0FD874C92AC4B51A00B3B0DD /* ReignLayout.swift in Sources */,
+				0F216F0F2AC5CFAE00E06815 /* Star.swift in Sources */,
+				0FD874AD2AC4ABF200B3B0DD /* AdventureTimeApp.swift in Sources */,
+				0FD874D82AC4C59500B3B0DD /* StarStyle.swift in Sources */,
+				0F216F132AC5D62D00E06815 /* ATButtonStyle.swift in Sources */,
+				0F216F092AC5CDB400E06815 /* ReignView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0FD874B62AC4ABF400B3B0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0FD874B72AC4ABF400B3B0DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		0FD874B92AC4ABF400B3B0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AdventureTime/AdventureTime.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AdventureTime/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Foundation.AdventureTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FD874BA2AC4ABF400B3B0DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AdventureTime/AdventureTime.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AdventureTime/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Foundation.AdventureTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FD874A42AC4ABF200B3B0DD /* Build configuration list for PBXProject "AdventureTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD874B62AC4ABF400B3B0DD /* Debug */,
+				0FD874B72AC4ABF400B3B0DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FD874B82AC4ABF400B3B0DD /* Build configuration list for PBXNativeTarget "AdventureTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD874B92AC4ABF400B3B0DD /* Debug */,
+				0FD874BA2AC4ABF400B3B0DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FD874A12AC4ABF200B3B0DD /* Project object */;
+}
