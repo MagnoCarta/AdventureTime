@@ -21,4 +21,5 @@ struct ArrowStyle: ButtonStyle {
 enum Direction: String {
     case left
     case right
+    case none
 }

@@ -10,43 +10,92 @@ import SwiftUI
 
 struct ReignCard: View {
     
-    var reign: Reign
+    @Binding var reino: Reino
+    @Binding var direction: Direction
+    
+    @State private var dragAmout: CGSize = .zero
+    @State private var cardAngle: Angle = .zero
+    
+    private let duration: CGFloat = 0.18
+    private let screenSize = UIScreen.main.bounds.size
     
     var body: some View {
-        ZStack {
-            Color.white.ignoresSafeArea()
-            RoundedRectangle(cornerSize: CGSize(width: 25.0, height: 25.0))
-                .fill(.shadow(.inner(radius: 3)))
-                .foregroundStyle(.white)
-                .overlay {
-                    VStack(alignment: .leading, spacing: 16) {
-                        VStack(spacing: 16) {
-                            Image(reign.name)
-                                .resizable()
-                                .frame(height: 181)
-                            Text(reign.subtitle)
-                                .font(.largeTitle)
-                                .bold()
-                            Text(reign.description)
-                                .lineLimit(nil)
-                        }
-                        HStack(spacing: 16) {
-                            VStack {
-                                Image(reign.leaderName)
-                                    .resizable()
-                                    .frame(width: 103, height: 108)
-                             //   Text(reign.leaderName)
-                            }
-                            Text(reign.leaderDescription)
-                                .font(.caption)
-                                .lineLimit(nil)
-                        }
+        RoundedRectangle(cornerSize: CGSize(width: 25.0, height: 25.0))
+            .fill(.shadow(.inner(radius: 3)))
+            .foregroundStyle(.white)
+            .overlay(alignment: .top) {
+                VStack(alignment: .leading, spacing: 16) {
+                    VStack(spacing: 16) {
+                        Image(reino.nome)
+                            .resizable()
+                            .frame(height: 181)
+                        Text(reino.subtitulo)
+                            .font(.largeTitle)
+                            .bold()
+                        Text(reino.descricao)
                     }
-                    .padding(.horizontal)
+                    HStack(spacing: 16) {
+                        VStack {
+                            Image(reino.nomeDoLider)
+                                .resizable()
+                                .frame(width: 103, height: 108)
+                        }
+                        Text(reino.descricaoDoLider)
+                            .font(.footnote)
+                    }
                 }
-            .star(isFilled: reign.isFavorite, color: reign.color)
-        }
-        .cornerRadius(25)
-        .frame(width: 344,height: 508)
+                .padding()
+            }
+            .star(isFilled: $reino.taFavoritado, color: reino.cor)
+            .cornerRadius(25)
+            .offset(dragAmout)
+            .rotationEffect(cardAngle)
+            .frame(width: 344,height: 508)
+            .gesture(
+                DragGesture()
+                    .onChanged(dragDidChange)
+                    .onEnded(dragDidEnd)
+            )
     }
+    
+    // TODO: Desafio -> Entender e Desbravar os Gestures!
+    private func dragDidChange(_ gesture: DragGesture.Value) {
+        dragAmout = gesture.translation
+        cardAngle = Angle(degrees: gesture.translation.width * 0.05)
+        
+        if gesture.translation.width > 0 && direction != .right {
+            withAnimation(.linear(duration: duration)) {
+                direction = .right
+            }
+        }
+        
+        if gesture.translation.width < 0 && direction != .left {
+            withAnimation(.linear(duration: duration)) {
+                direction = .left
+            }
+        }
+        
+        if gesture.translation == .zero && direction != .none {
+            withAnimation(.linear(duration: duration)) {
+                direction = .none
+            }
+        }
+    }
+    
+    private func dragDidEnd(_ gesture: DragGesture.Value) {
+        var reinoAtual = UserDefaults.standard.integer(forKey: "reinoAtual")
+        let numeroDeReinos = UserDefaults.standard.integer(forKey: "numeroDeReinos")
+        if direction == .left && reinoAtual > 0 {
+            reinoAtual -= 1
+        } else if direction == .right && reinoAtual < numeroDeReinos - 1 {
+            reinoAtual += 1
+        }
+        UserDefaults.standard.set(reinoAtual, forKey: "reinoAtual")
+        withAnimation(.linear(duration: duration)) {
+            dragAmout = .zero
+            cardAngle = .zero
+            direction = .none
+        }
+    }
+    
 }

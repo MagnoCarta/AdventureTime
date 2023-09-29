@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct Reign {
+struct Reino {
     
-    var leaderName: String
-    var leaderDescription: String
-    var name: String
-    var subtitle: String
-    var description: String
-    var isFavorite: Bool
-    var color: Color
+    var nome: String
+    var subtitulo: String
+    var descricao: String
+    var nomeDoLider: String
+    var descricaoDoLider: String
+    var taFavoritado: Bool
+    var cor: Color
     
 }

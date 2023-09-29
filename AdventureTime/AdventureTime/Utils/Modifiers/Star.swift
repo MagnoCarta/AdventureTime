@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Star: ViewModifier {
     
-    @State var isFilled: Bool
+    @Binding var isFilled: Bool
     var color: Color
     var size: CGFloat = 45
     
@@ -18,7 +18,9 @@ struct Star: ViewModifier {
             .overlay(alignment: .trailing) {
                 VStack {
                     Spacer()
-                    Button("") {}.buttonStyle(StarStyle(isFilled: $isFilled, color: color, size: size))
+                    Button("") {
+                        isFilled.toggle()
+                    }.buttonStyle(StarStyle(isFilled: $isFilled, color: color, size: size))
                 }
                 .padding(12)
             }
@@ -26,7 +28,7 @@ struct Star: ViewModifier {
 }
 
 extension View {
-    func star(isFilled: Bool, color: Color) -> some View {
+    func star(isFilled: Binding<Bool>, color: Color) -> some View {
         modifier(Star(isFilled: isFilled, color: color))
     }
 }

@@ -19,9 +19,6 @@ struct StarStyle: ButtonStyle {
             .fontWeight(.thin)
             .foregroundStyle(color)
             .frame(width: size,height: size)
-            .onTapGesture {
-                isFilled.toggle()
-            }
     }
     
     
