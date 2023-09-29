@@ -10,7 +10,7 @@ import SwiftUI
 struct BeemoView: View {
     var body: some View {
         ZStack {
-            Color.white.ignoresSafeArea()
+            Color.gray.ignoresSafeArea()
             VStack {
                 Text("Olá Pessoa Atrás da tela! Eu quero muito poder viajar pelos reinos de OOO, mas tenho medo de ir só, você pode vir comigo!? para você será como mexer em cartinhas!, se decidir ir, quando estiver pronto basta clicar no botão abaixo")
                 Image("Beemo")
@@ -18,7 +18,7 @@ struct BeemoView: View {
                     .frame(width: 150, height: 150)
                 NavigationLink(destination: {
                     SwippeReignViews()
-                        .navigationBarBackButtonHidden()
+                         .navigationBarBackButtonHidden()
                 }, label: {
                     Text("Visitar os Reinos")
                         .frame(maxWidth: .infinity, alignment: .center)
