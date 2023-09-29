@@ -21,6 +21,5 @@ struct Segment: View {
                     .foregroundStyle(point == selectedPoint ? color : .gray)
             }
         }
-        
     }
 }

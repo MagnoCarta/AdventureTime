@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ArrowStyle: ButtonStyle {
     
-    var direction: Direction
+    var direction: Direcao
     
     func makeBody(configuration: Configuration) -> some View {
         Image(systemName: "arrow.\(direction.rawValue)")
@@ -18,7 +18,7 @@ struct ArrowStyle: ButtonStyle {
     
 }
 
-enum Direction: String {
+enum Direcao: String {
     case left
     case right
     case none

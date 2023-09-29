@@ -6,14 +6,26 @@
 //
 
 import SwiftUI
-//
-//struct ReignLayout: View {
-//    var title: Text
-//    var card: ReignCard
-//    var 
-//    
-//    var body: some View {
-//        
-//    }
-//    
-//}
+
+struct LayoutReino<Segmento: View>: View {
+    var cor: Color
+    var titulo: Text
+    var card: CardReino
+    var segmento: () -> Segmento
+    
+    var body: some View {
+        ZStack {
+            cor.ignoresSafeArea()
+            VStack(spacing: 40) {
+                titulo
+                VStack(spacing: 60) {
+                    card
+                    segmento()
+                }
+                .padding(.bottom, 40)
+            }
+            .padding(.top, 90)
+        }
+    }
+    
+}
