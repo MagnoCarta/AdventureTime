@@ -14,6 +14,14 @@ struct ReignView: View {
     @State private var direcao: Direcao = .none
     @AppStorage("reinoAtual") var reinoAtual: Int = 0
     
+    @State private var dragAmout: CGSize = .zero
+    @State private var cardAngle: Angle = .zero
+    
+    private let duration: CGFloat = 0.18
+    private let screenSize = UIScreen.main.bounds.size
+    
+    var size: CGFloat = 45
+    
     var body: some View {
         LayoutReino(cor: cor,
                     titulo: title,
@@ -42,7 +50,4 @@ struct ReignView: View {
         Segment(points: 4, selectedPoint: reinoAtual, color: .white)
             .animation(.easeInOut, value: reinoAtual)
     }
-    
-    
-    
 }
